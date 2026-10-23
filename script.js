@@ -32,14 +32,12 @@ window.addEventListener('DOMContentLoaded', () => {
         } else if (packageType === 'classic') {
             selectElement.value = 'Classic Package';
         } else if (packageType === 'day') {
-            // Note: Ensure the text below matches the <option> text in your HTML exactly
-            selectElement.value = 'Classic Package'; // Or add a "Day Package" option to your HTML select
+            selectElement.value = 'Classic Package'; 
         }
     }
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-
     const burger = document.getElementById("burger");
     const navLinks = document.getElementById("nav-links");
 
@@ -49,5 +47,4 @@ document.addEventListener('DOMContentLoaded', () => {
             burger.classList.toggle("active");
         });
     }
-
 });
