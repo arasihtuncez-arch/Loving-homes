@@ -3,45 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <title>Loving Homes | Luxury Canine Retreat</title>
+    <link rel="icon" type="image/png" href="Assets/favicon.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav class="navbar">
+        <!-- Logo image replaces the plain text "LOVING HOMES" in top-left -->
+        <a href="index.html" class="logo-link">
+            <img src="Assets/favicon.png" alt="Loving Homes Logo" class="nav-logo-img">
+        </a>
 
-    <div class="logo">LOVING HOMES</div>
+        <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="packages.html">PACKAGES</a></li>
+            <li><a href="location.html">LOCATION</a></li>
+        </ul>
+        <a href="location.html" class="btn-gold">BOOK NOW</a>
+    </nav>
 
-    <div class="burger" id="burger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <ul class="nav-links" id="nav-links">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="services.html">SERVICES</a></li>
-        <li><a href="packages.html">PACKAGES</a></li>
-        <li><a href="about.html">ABOUT US</a></li>
-        <li><a href="location.html">LOCATION</a></li>
-    </ul>
-
-    <a href="location.html" class="btn-gold">BOOK NOW</a>
-
-</nav>
-
+    <!-- Full-screen Hero Section -->
     <header class="hero">
-        <div>
+        <div class="hero-content">
             <h1 style="font-size: 4.5rem;">LOVING HOMES</h1>
-            <p style="font-size: 1.2rem; letter-spacing: 4px;">PREMIER LUXURY CANINE RETREAT • HONG KONG</p>
+            <p style="font-size: 1.4rem; letter-spacing: 4px;">PREMIER LUXURY CANINE RETREAT • HONG KONG</p>
             <br>
             <a href="services.html" class="btn-gold">DISCOVER OUR SERVICES</a>
         </div>
     </header>
 
+    <!-- Section 1: Introduction -->
     <section class="container" style="text-align: center;">
         <h2 class="section-title">A Sanctuary for Excellence</h2>
-        <p style="max-width: 700px; margin: 0 auto;">Providing the highest standard of care, where luxury meets love. From our underfloor-heated suites to our 24-hour on-call vet services.</p>
+        <p style="max-width: 700px; margin: 0 auto; font-size: 1.15rem;">Providing the highest standard of care, where luxury meets love. From our underfloor-heated suites to our 24-hour on-call vet services.</p>
     </section>
-<footer>
+
+    <!-- Section 2: Why Choose Us -->
+    <section class="container" style="background: var(--marble); text-align: center;">
+        <h2 class="section-title">Why Discerning Owners Choose Us</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>24/7 Supervision</h3>
+                <p>Round-the-clock professional monitoring and veterinary support to ensure complete safety and peace of mind.</p>
+            </div>
+            <div class="card">
+                <h3>Bespoke Comfort</h3>
+                <p>Climate-controlled private suites, orthopedic bedding, and tailored daily activity routines for every guest.</p>
+            </div>
+            <div class="card">
+                <h3>Exclusive Location</h3>
+                <p>Nestled in a peaceful, secure environment on The Peak, offering clean air and private green spaces.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Testimonials -->
+    <section class="container" style="text-align: center;">
+        <h2 class="section-title">Trusted by Pet Parents</h2>
+        <p style="max-width: 600px; margin: 0 auto; font-style: italic; font-size: 1.1rem;">"Loving Homes gave our golden retriever the ultimate luxury holiday while we were away. The daily updates and care were unmatched!"</p>
+        <p style="margin-top: 15px; font-weight: bold; color: var(--gold);">— Victoria L., Hong Kong</p>
+    </section>
+
+    <footer>
         <div class="footer-grid">
             <div class="footer-col">
                 <h3>LOVING HOMES</h3>
@@ -63,5 +92,5 @@
         </div>
     </footer>
     <script src="script.js"></script>
-    </body>
+</body>
 </html>
